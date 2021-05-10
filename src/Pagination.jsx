@@ -4,9 +4,9 @@ import './Pagination.css'
 export default function Pagination({ text, isLeftDisabled, isRightDisabled }) {
   return (
     <section className="Pagination">
-      <button className={isLeftDisabled ? '' : 'active'}>&lt;</button>
+      <button className={isLeftDisabled ? 'button' : 'active'}>&lt;</button>
       {text}
-      <button className={isRightDisabled ? '' : 'active'}>&gt;</button>
+      <button className={isRightDisabled ? 'button' : 'active'}>&gt;</button>
     </section>
   )
 }
