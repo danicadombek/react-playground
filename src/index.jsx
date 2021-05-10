@@ -1,4 +1,6 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom";
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+import App from './App'
+import Button from './Button'
 
-ReactDOM.render("Hello world", document.querySelector("#root"));
+ReactDOM.render(<App />, document.querySelector('#root'))
