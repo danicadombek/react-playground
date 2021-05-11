@@ -5,8 +5,15 @@ import Cards from './Cards'
 export default () => {
   return (
     <div>
-      <Cards />
-      <Cards isBookmarked />
+      <Cards
+        title="Wie sieht es aus?"
+        copyText="Das ist die beste Antwort auf diese Frage."
+      />
+      <Cards
+        isBookmarked
+        title="Frage"
+        copyText="Hier steht ein überaus sinnvoller und hilfreicher Text."
+      />
       <Pagination isLeftDisabled={true} text="1/34" />
     </div>
   )
