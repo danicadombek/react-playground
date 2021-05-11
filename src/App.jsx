@@ -1,11 +1,11 @@
 import * as React from 'react'
 import Button from './Button'
+import Pagination from './Pagination'
 
 export default () => {
   return (
     <div>
-      <Button isActive={true}>Hey ho</Button>
-      <Button isActive={false}>Not active</Button>
+      <Pagination isLeftDisabled text="1/34" />
     </div>
   )
 }
