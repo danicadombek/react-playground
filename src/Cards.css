@@ -31,3 +31,21 @@ h2 {
   border: 20px solid rgb(119, 172, 154);
   border-bottom-color: transparent;
 }
+
+.hidden {
+  display: none;
+}
+
+.Card-tags-style {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.Card-tags {
+  background: rgb(119, 172, 154);
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 4px;
+  width: auto;
+  padding: 6px;
+}

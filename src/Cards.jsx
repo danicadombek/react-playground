@@ -6,6 +6,10 @@ export default function Cards({
   questionText,
   answerText,
   isBookmarked,
+  isAnswerVisible,
+  tag1Text,
+  tag2Text,
+  tag3Text,
 }) {
   return (
     <section className="Cards">
@@ -15,8 +19,15 @@ export default function Cards({
         className={isBookmarked ? 'bookmark--selected bookmark' : 'bookmark'}
         aria-label="bookmark"
       ></div>
-      <p>Question: {questionText}</p>
-      <p>Answer: {answerText}</p>
+      <p>Frage: {questionText}</p>
+      <p className={isAnswerVisible ? 'answerText' : 'hidden'}>
+        Antwort: {answerText}
+      </p>
+      <div className="Card-tags-style">
+        <div className="Card-tags">{tag1Text.toUpperCase()}</div>
+        <div className="Card-tags">{tag2Text.toUpperCase()}</div>
+        <div className="Card-tags">{tag3Text.toUpperCase()}</div>
+      </div>
     </section>
   )
 }
