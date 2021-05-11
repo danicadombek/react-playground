@@ -1,7 +1,7 @@
 .Cards {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 280px;
-  height: 120px;
+  width: 400px;
+  height: 200px;
   border: 1px solid rgb(175, 175, 175);
   box-shadow: 6px 6px 20px;
   padding: 16px;
@@ -10,9 +10,13 @@
   position: relative;
 }
 
+h2 {
+  font-size: 18px;
+}
+
 .Card-headline {
   padding-top: 0;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
 }
 
 .bookmark {
@@ -26,4 +30,22 @@
 .bookmark--selected {
   border: 20px solid rgb(119, 172, 154);
   border-bottom-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+.Card-tag-style {
+  background: rgb(119, 172, 154);
+  border: 1px solid rgb(175, 175, 175);
+  border-radius: 4px;
+  width: auto;
+  padding: 6px;
+}
+
+.Card-tags-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
 }
