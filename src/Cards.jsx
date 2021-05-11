@@ -7,9 +7,7 @@ export default function Cards({
   answerText,
   isBookmarked,
   isAnswerVisible,
-  tag1Text,
-  tag2Text,
-  tag3Text,
+  tags,
 }) {
   return (
     <section className="Cards">
@@ -23,10 +21,12 @@ export default function Cards({
       <p className={isAnswerVisible ? 'answerText' : 'hidden'}>
         Antwort: {answerText}
       </p>
-      <div className="Card-tags-style">
-        <div className="Card-tags">{tag1Text.toUpperCase()}</div>
-        <div className="Card-tags">{tag2Text.toUpperCase()}</div>
-        <div className="Card-tags">{tag3Text.toUpperCase()}</div>
+      <div className="Card-tags-container">
+        {tags.map(tag => (
+          <div className="Card-tag-style" key={tag}>
+            {tag}
+          </div>
+        ))}
       </div>
     </section>
   )

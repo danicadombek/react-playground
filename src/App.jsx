@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Pagination from './Pagination'
 import Cards from './Cards'
+import Navigation from './Navigation'
 
 const cards = [
   {
@@ -10,9 +11,7 @@ const cards = [
     isBookmarked: false,
     isAnswerVisible: true,
     id: 1,
-    tag1Text: 'React',
-    tag2Text: 'Javascript',
-    tag3Text: 'CSS',
+    tags: ['React ', 'Javascript ', 'CSS '],
   },
   {
     title: 'Java-Script',
@@ -21,15 +20,14 @@ const cards = [
     isBookmarked: true,
     isAnswerVisible: false,
     id: 2,
-    tag1Text: 'React',
-    tag2Text: 'Javascript',
-    tag3Text: 'CSS',
+    tags: ['React ', 'Javascript'],
   },
 ]
 
 export default () => {
   return (
     <div>
+      <Navigation />
       {cards.map(
         ({
           id,
@@ -38,9 +36,7 @@ export default () => {
           answerText,
           isBookmarked,
           isAnswerVisible,
-          tag1Text,
-          tag2Text,
-          tag3Text,
+          tags,
         }) => (
           <Cards
             key={id}
@@ -49,9 +45,7 @@ export default () => {
             answerText={answerText}
             isBookmarked={isBookmarked}
             isAnswerVisible={isAnswerVisible}
-            tag1Text={tag1Text}
-            tag2Text={tag2Text}
-            tag3Text={tag3Text}
+            tags={tags}
           />
         )
       )}
