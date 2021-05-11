@@ -5,13 +5,15 @@ import Cards from './Cards'
 const cards = [
   {
     title: 'Wie sieht es aus?',
-    text: 'Das ist die beste Antwort auf diese Frage.',
-    isBookmarked: false,
+    questionText: 'Das ist die beste Antwort auf diese Frage.',
+    answerText: 'Lorem ipsulum',
+    isBookmarked: true,
     id: 1,
   },
   {
     title: 'Frage',
-    text: 'Hier steht ein überaus sinnvoller und hilfreicher Text.',
+    questionText: 'Hier steht ein überaus sinnvoller und hilfreicher Text.',
+    answerText: 'Lorem ipsulum',
     isBookmarked: true,
     id: 2,
   },
@@ -20,11 +22,12 @@ const cards = [
 export default () => {
   return (
     <div>
-      {cards.map(({ id, title, text, isBookmarked }) => (
+      {cards.map(({ id, title, questionText, answerText, isBookmarked }) => (
         <Cards
           key={id}
           title={title}
-          copyText={text}
+          questionText={questionText}
+          answerText={answerText}
           isBookmarked={isBookmarked}
         />
       ))}
