@@ -7,7 +7,7 @@ const cards = [
     title: 'React',
     questionText: 'Wie sieht es aus?',
     answerText: 'Hier steht ein überaus sinnvoller und hilfreicher Text.',
-    isBookmarked: true,
+    isBookmarked: false,
     isAnswerVisible: true,
     id: 1,
     tag1Text: 'React',

@@ -16,7 +16,7 @@ h2 {
 
 .Card-headline {
   padding-top: 0;
-  margin: 0 0 30px;
+  margin: 0 0 20px;
 }
 
 .bookmark {
@@ -38,7 +38,6 @@ h2 {
 
 .Card-tags-style {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -48,4 +47,5 @@ h2 {
   border-radius: 4px;
   width: auto;
   padding: 6px;
+  margin-top: 30px;
 }
