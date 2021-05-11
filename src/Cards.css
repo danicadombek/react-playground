@@ -1,0 +1,29 @@
+.Cards {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 280px;
+  height: 120px;
+  border: 1px solid rgb(175, 175, 175);
+  box-shadow: 6px 6px 20px;
+  padding: 16px;
+  margin: 16px;
+  background-color: rgb(215, 235, 228);
+  position: relative;
+}
+
+.Card-headline {
+  padding-top: 0;
+  margin: 0 0 30px;
+}
+
+.bookmark {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  border: 20px solid rgb(179, 178, 178);
+  border-bottom-color: transparent;
+}
+
+.bookmark--selected {
+  border: 20px solid rgb(119, 172, 154);
+  border-bottom-color: transparent;
+}
